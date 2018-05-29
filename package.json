@@ -1,0 +1,24 @@
+{
+  "name": "react-mobile-slider",
+  "version": "0.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./node_modules/.bin/babel src --out-dir dist"
+  },
+  "author": "liuzhenli",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "slider",
+    "react-slider",
+    "mobile",
+    "react-mobile",
+    "react-mobile-slider",
+    "mobile-slider"
+  ],
+  "dependencies": {
+    "classname": "0.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+￼npm i react-mobile-slider
