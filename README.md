@@ -22,4 +22,4 @@
   }
   
 ```
-![](https://github.com/zhenliliu/react-mobile-slider/blob/master/images/demo.gif)
+![](https://github.com/zhenliliu/react-mobile-slider/blob/master/images/demo.gif?raw=true)
