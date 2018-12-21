@@ -1,108 +1,104 @@
-$system_color: #fbfbfb;
-@function pxToRem($px){
-  @return $px * 1px;
-}
 .slider_container{
   box-sizing: border-box;
-  min-height: pxToRem(100);
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
-  padding: pxToRem(30) pxToRem(40) 0;
+  padding: 30px 40px 0;
   background-color: #fff;
   .selected_number_box{
-    height: pxToRem(80);
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     .selected_number{
-      font-size: pxToRem(35);
+      font-size: 35px;
       color: #fe9900;
-      line-height: pxToRem(60);
+      line-height: 60px;
       font-weight: 600;
     }
     .dashed_line{
       height: 0;
-      width: pxToRem(50);
-      border-top: pxToRem(1) dashed #949494;
+      width: 50px;
+      border-top: 1px dashed #949494;
     }
   }
   .num_box{
-    height: pxToRem(40);
-    margin-bottom: pxToRem(40);
+    height: 40px;
+    margin-bottom: 40px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .min_number{
-      font-size: pxToRem(18);
+      font-size: 18px;
       color: #949494
     }
 
   }
   .slider_row{
     width: 100%;
-    height: pxToRem(60);
-    border-left: pxToRem(2) solid #fe9900;
-    border-right: pxToRem(2) solid rgba(169,169,169,1);
+    height: 60px;
+    border-left: 2px solid #fe9900;
+    border-right: 2px solid rgba(169,169,169,1);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    margin: 0 pxToRem(40) pxToRem(40);
+    margin: 0 40px 40px;
     position: relative;
     .v_line{
-      height: pxToRem(10);
-      width: pxToRem(2);
+      height: 10px;
+      width: 2px;
       background-color: rgba(169,169,169,1);
       &.center_line{
-        height: pxToRem(60)
+        height: 60px
       }
     }
     .selected_color_box{
       width: 0;
-      height: pxToRem(60);
+      height: 60px;
       background-color: #fe9900;
       opacity: 0.2;
       position: absolute;
-      left: pxToRem(-2);
+      left: -2px;
       top: 0
     }
   }
   .slider_bar{
-    height: pxToRem(100);
-    width: pxToRem(2);
+    height: 100px;
+    width: 2px;
     background-color: #fe9900;
     position: absolute;
     left: 0;
-    bottom: pxToRem(-40);
+    bottom: -40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     .bar_out_line{
-      height: pxToRem(25);
-      width: pxToRem(25);
+      height: 25px;
+      width: 25px;
       background-color: #fe9900;
       position: absolute;
       bottom: 0;
-      left: pxToRem(-11);
-      -webkit-border-radius: pxToRem(25);
-      -moz-border-radius: pxToRem(25);
-      border-radius: pxToRem(25);
+      left: -11px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
       display: flex;
       justify-content: center;
       align-items: center;
       .bar_in_line{
-        height: pxToRem(15);
-        width: pxToRem(15);
+        height: 15px;
+        width: 15px;
         background-color: #fff;
-        -webkit-border-radius: pxToRem(15);
-        -moz-border-radius: pxToRem(15);
-        border-radius: pxToRem(15);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
       }
     }
   }

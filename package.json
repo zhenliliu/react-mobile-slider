@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "./node_modules/.bin/babel src --out-dir dist"
+    "compile": "./node_modules/.bin/babel src --out-dir dist",
+    "build": "webpack --progress --color"
   },
   "author": "刘振利",
   "license": "MIT",
@@ -20,6 +21,25 @@
     "mobile-slider"
   ],
   "dependencies": {
-    "classname": "0.0.0"
+    "@babel/core": "^7.2.2",
+    "classname": "0.0.0",
+    "less": "^3.9.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.2.3",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^2.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2"
   }
 }

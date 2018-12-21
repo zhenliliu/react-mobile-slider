@@ -2,17 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import classname from 'classname'
-import './index.scss'
+import './index.less'
 export default class Index extends Component {
-
-    static defaultProps = {
-        maxNumber: 1000,
-        minNumber: 0,
-        selectedNumber: 0,
-        callback: () => { console.warn('没有传递回调函数！')},
-        unit: '单位',
-        disable: false
-    }
 
     constructor(props) {
         super(props)
@@ -173,4 +164,12 @@ Index.propTypes = {
     minNumber: PropTypes.number.isRequired,
     selectedNumber: PropTypes.number.isRequired,
     callback: PropTypes.func.isRequired,
+}
+Index.defaultProps = {
+  maxNumber: 1000,
+  minNumber: 0,
+  selectedNumber: 0,
+  callback: () => { console.warn('没有传递回调函数！')},
+  unit: '单位',
+  disable: false
 }
